@@ -11,11 +11,11 @@ public class Troll implements Monster{
         this.damage =  40;
         this.name = "Troll";
     }
-
+    @Override
     public void takeDamage(int dam){
         damage += (.5 * dam);
     }
-
+    @Override
     public void reportStatus(){
         System.out.println("My name is " + name);
         System.out.println("I have " + damage + " points of damage");

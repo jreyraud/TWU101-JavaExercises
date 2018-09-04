@@ -11,11 +11,11 @@ public class Orc implements Monster{
         this.damage =  20;
         this.name = "Orc";
     }
-
+    @Override
     public void takeDamage(int dam){
         damage += dam;
     }
-
+    @Override
     public void reportStatus(){
         System.out.println("My name is " + name);
         System.out.println("I have " + damage + " points of damage");

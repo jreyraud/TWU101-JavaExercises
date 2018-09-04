@@ -34,7 +34,7 @@ public class Game {
         try {
             int guess = Integer.parseInt(scan.next());
             guesses.add(guess);
-            
+
             if (guess == number) guessedCorrect = true;
 
             if (guess < number) System.out.println("Try something higher!");
