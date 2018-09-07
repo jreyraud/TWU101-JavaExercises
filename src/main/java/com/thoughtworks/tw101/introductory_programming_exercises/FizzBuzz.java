@@ -32,6 +32,20 @@ public class FizzBuzz {
     }
 
     private static void fizzBuzz() {
+        for (int i = 1; i <= 100; i++){
+            boolean mult3 = i % 3 == 0;
+            boolean mult5 = i % 5 == 0;
 
+            if(mult3 && !mult5){
+                System.out.println("Fizz");
+            }
+            else if (mult5 && !mult3){
+                System.out.println("Buzz");
+            }
+            else if (mult3 && mult5){
+                System.out.println("FizzBuzz");
+            }
+            else System.out.println(i);
+        }
     }
 }
