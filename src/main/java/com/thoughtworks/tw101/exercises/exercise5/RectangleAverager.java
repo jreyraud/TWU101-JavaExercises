@@ -7,6 +7,6 @@ public class RectangleAverager {
         for (int i = 0; i < rectangles.length; i++){
             sumOfAreas += rectangles[i].area();
         }
-        return (sumOfAreas / (rectangles.length - 1));
+        return (sumOfAreas / (rectangles.length));
     }
 }

@@ -5,7 +5,7 @@ package com.thoughtworks.tw101.exercises.exercise6.middleearth;
  */
 public interface Monster {
 
-    public abstract void takeDamage (int dam);
+    void takeDamage(int dam);
 
-    public abstract void reportStatus();
+    void reportStatus();
 }

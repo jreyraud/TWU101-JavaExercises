@@ -14,7 +14,6 @@ public class Game {
     public Game(){
         Random randomNum = new Random();
         number = randomNum.nextInt(100) + 1;
-        System.out.println(number);
     }
 
     public void play(){
@@ -30,7 +29,6 @@ public class Game {
 
         if (guess == number){
             guessedCorrect = true;
-
         }
         if (guess < number){
             System.out.println("Try something higher!");

@@ -17,7 +17,6 @@ public class Main {
         root.add("Sue-Ellen");
         root.add("Sara");
         root.add("Casey");
-
         List<String> names = root.names();
 
         for (String name : names) {

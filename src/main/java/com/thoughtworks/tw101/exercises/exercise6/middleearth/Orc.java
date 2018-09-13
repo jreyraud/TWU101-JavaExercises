@@ -12,8 +12,8 @@ public class Orc implements Monster{
         this.name = "Orc";
     }
     @Override
-    public void takeDamage(int dam){
-        damage += dam;
+    public void takeDamage(int damage){
+        this.damage += damage;
     }
     @Override
     public void reportStatus(){

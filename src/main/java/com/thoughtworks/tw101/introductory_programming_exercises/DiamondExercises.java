@@ -1,6 +1,8 @@
 package com.thoughtworks.tw101.introductory_programming_exercises;
 
 public class DiamondExercises {
+    private static int spaceCounter;
+    private static int starCounter;
     public static void main(String[] args) {
         drawAnIsoscelesTriangle(3);
         drawADiamond(8);
@@ -13,8 +15,8 @@ public class DiamondExercises {
 //             ***
 //            *****
     private static void drawAnIsoscelesTriangle(int n) {
-        int spaceCounter = n - 1;
-        int starCounter = 1;
+        spaceCounter = n - 1;
+        starCounter = 1;
         for (int i = 0; i < n; i++){
             for (int j = 0; j < spaceCounter; j++){
                 System.out.print(" ");
@@ -42,8 +44,8 @@ public class DiamondExercises {
     }
 
     private static void drawReverseTriangle(int n){
-        int spaceCounter = 1;
-        int starCounter = 1 + (n-2)*2;
+        spaceCounter = 1;
+        starCounter = 1 + (n-2)*2;
         for (int i = 0; i < n-1; i++){
             for (int j = 0; j < spaceCounter; j++){
                 System.out.print(" ");

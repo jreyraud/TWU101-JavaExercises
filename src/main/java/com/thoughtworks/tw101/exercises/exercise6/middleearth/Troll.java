@@ -12,8 +12,8 @@ public class Troll implements Monster{
         this.name = "Troll";
     }
     @Override
-    public void takeDamage(int dam){
-        damage += (.5 * dam);
+    public void takeDamage(int damage){
+        this.damage += (.5 * damage);
     }
     @Override
     public void reportStatus(){
